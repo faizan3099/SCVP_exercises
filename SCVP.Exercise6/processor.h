@@ -179,6 +179,19 @@ void processor::processTrace()
 		trans.set_data_ptr(data);
 		iSocket->b_transport(trans, delay);
 
+
+		/*if(trans.get_response_status() == tlm::TLM_ADDRESS_ERROR_RESPONSE)
+		{
+			SC_REPORT_FATAL(name(), "Address out-of-range");
+		}
+		
+		if(trans.get_response_status() == tlm::TLM_BURST_ERROR_RESPONSE)
+		{
+			SC_REPORT_FATAL(name(), "Burst-Input detected");
+		}*/
+
+
+		
 		wait(delay);
 
 #if 1
