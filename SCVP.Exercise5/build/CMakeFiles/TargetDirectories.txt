@@ -1,0 +1,3 @@
+/home/faizan/SCVP.Exercise5/build/CMakeFiles/exercise5.dir
+/home/faizan/SCVP.Exercise5/build/CMakeFiles/edit_cache.dir
+/home/faizan/SCVP.Exercise5/build/CMakeFiles/rebuild_cache.dir
