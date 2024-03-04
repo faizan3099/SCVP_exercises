@@ -24,6 +24,22 @@ h1 = input // all outputs of the registers equal to the inputs
 …..
 
 
+
+
+
+
+// Calculate the memory size per module
+const int memorySizePerModule = totalMemorySize / numModules;
+
+// Determine the module index based on the address
+int moduleIndex = trans.get_address() / memorySizePerModule;
+
+// Correct the address for the specific module
+trans.set_address(trans.get_address() % memorySizePerModule);
+
+// Call the appropriate socket based on the module index
+iSocket[moduleIndex]->b_transport(trans, delay);
+
 ---------------------------------------------///SystemC Basics///-------------------------------------------------------------
 
 TOPICS DISCUSSED: SC_MODULE, SC_CTOR, delta delay (enables the simulation of concurrency in a sequential simulator), stages of SystemC Simulation Kernel, SC_METHOD, SC_THREAD, sc_event, sc_time, dynamic sensitivity
