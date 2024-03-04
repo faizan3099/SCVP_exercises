@@ -79,3 +79,7 @@ TOPICS DISCUSSED: data types, and_reduce() methods, Channels, Interfaces, Primit
 ◼ end_of_simulation()
 
 RELEVANT EXAMPLES: custom_fifo, fifo_example, kpn_example, mutex_example, custom_signal, portarrays, multiports, sc_event_and_queue, event_finder, dynamic_processes, reporting, callbacks
+
+sc_signal_in_if: This interface is used for input ports that receive signals.
+sc_signal_out_if: This interface is used for output ports that send signals.
+sc_fifo_in_if and sc_fifo_out_if: These interfaces are used for input and output ports respectively in FIFO (First-In-First-Out) communication channels.
